@@ -1,0 +1,84 @@
+{
+  "name": "grunt-cucumberjs",
+  "description": "Generates documentation from Cucumber features",
+  "version": "2.0.2",
+  "homepage": "https://github.com/mavdi/grunt-cucumberjs",
+  "author": {
+    "name": "Mehdi Avdi",
+    "email": "mehdi.avdi@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mavdi/grunt-cucumberjs.git"
+  },
+  "contributors": [
+    {
+      "name": "Andrew Keig",
+      "email": "andrew.keig@gmail.com",
+      "url": "https://github.com/AndrewKeig"
+    },
+    {
+      "name": "Jozz Hart",
+      "email": "me@jozzhart.com",
+      "url": "http://jozzhart.com"
+    },
+    {
+      "name": "Kushang Gajjar",
+      "email": "g.kushang@gmail.com",
+      "url": "https://github.com/gkushang"
+    },
+    {
+      "name": "Sowmya Yellamilli",
+      "url": "https://github.com/yellamillis"
+    },
+    {
+      "name": "Casey Goodhew",
+      "email": "goodhewc@gmail.com",
+      "url": "https://github.com/caseygoodhew"
+    }
+  ],
+  "dependencies": {
+    "chai": "^4.1.2",
+    "cucumber-html-report": "^0.6.3",
+    "cucumber-html-reporter": "^3.0.4",
+    "cucumber-parallel": "^2.0.3",
+    "node-fs": "^0.1.7",
+    "ramda": "^0.24.1",
+    "request": "^2.83.0",
+    "sanitize-filename": "^1.6.1",
+    "selenium-webdriver": "^3.6.0"
+  },
+  "devDependencies": {
+    "cucumber": "^2.3.1",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-jsbeautifier": "^0.2.13"
+  },
+  "bugs": {
+    "url": "https://github.com/mavdi/grunt-cucumberjs/issues"
+  },
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/mavdi/grunt-cucumberjs/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "npm run clean && grunt cucumberjs",
+    "clean": "rm -rf test/report/*.html test/report/cucumber_report.json test/report/*.json test/report/screenshot"
+  },
+  "keywords": [
+    "gruntplugin",
+    "cucumber",
+    "cucumberjs",
+    "htmlreport",
+    "parellel"
+  ]
+}
