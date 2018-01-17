@@ -2,7 +2,8 @@ Grunt Cucumberjs
 ================
 ***Automation test for GTT Webportal using Cucumber.js. Outputs results in various HTML themes. Runs Cucumber.js in Parallel***
 
-
+## Prerequisite
+*** Latest version of Nodejs is required for this test ***
 
 ## Getting Started
 ***NOTE:***
