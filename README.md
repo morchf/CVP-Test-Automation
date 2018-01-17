@@ -1,11 +1,12 @@
 Grunt Cucumberjs
 ================
-***Grunt task to run Cucumber.js. Outputs results in various HTML themes. Runs Cucumber.js in Parallel***
+***Automation test for GTT Webportal using Cucumber.js. Outputs results in various HTML themes. Runs Cucumber.js in Parallel***
 
-[![v][npm-shield]][npm-link] [![v][license-shield]][license-link]
 
 
 ## Getting Started
+***NOTE:***
+This is for information only.. gruntfile and cucumberjs has been configued already
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
@@ -69,8 +70,13 @@ cucumberjs: {
 }
 ```
 
-## Usage
-```bash
+#### Usage
+
+To run the test on your local..
+```
+ $ git clone https://github.com/gtt/webportal_Auto_Report.git
+ $ cd webportal_Auto_Report.git
+
 #runs all features specified in task
 $ grunt cucumberjs
 
@@ -280,7 +286,7 @@ Two pie charts are displayed on report
 Please note that Pie Charts are available only for Bootstrap Theme.
 
 
-## Changelog 
+## Changelog
 
 [changelog][changelog]
 
@@ -306,6 +312,3 @@ Take a look at [cucumber-html-reporter][9] for more information on <b> Attaching
 
 [license-shield]: https://img.shields.io/github/license/mashape/apistatus.svg
 [license-link]: https://github.com/mavdi/grunt-cucumberjs/
-
-
-
