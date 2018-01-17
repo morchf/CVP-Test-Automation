@@ -70,7 +70,7 @@ cucumberjs: {
 }
 ```
 
-#### Usage
+# Usage
 
 To run the test on your local..
 ```
