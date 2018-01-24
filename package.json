@@ -42,6 +42,7 @@
     "cucumber-html-report": "^0.6.3",
     "cucumber-html-reporter": "^3.0.4",
     "cucumber-parallel": "^2.0.3",
+    "form-data": "^2.3.1",
     "node-fs": "^0.1.7",
     "ramda": "^0.24.1",
     "request": "^2.83.0",
@@ -49,6 +50,8 @@
     "selenium-webdriver": "^3.6.0"
   },
   "devDependencies": {
+    "chai": "^3.2.0",
+    "chai-http": "^1.0.0",
     "cucumber": "^2.3.1",
     "grunt": "^1.0.1",
     "grunt-cli": "^1.2.0",

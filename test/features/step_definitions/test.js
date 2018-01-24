@@ -3,7 +3,7 @@ var {defineSupportCode} = require('cucumber');
 defineSupportCode(function ({Before, Given, Then}) {
 
     Before(function(scenario, callback) {
-        console.log('console logs should not break the report');
+      //  console.log('console logs should not break the report');
         callback();
     });
 

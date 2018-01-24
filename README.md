@@ -77,6 +77,7 @@ To run the test on your local..
 ```
  $ git clone https://github.com/gtt/webportal_Auto_Report.git
  $ cd webportal_Auto_Report.git
+ $ npm install
 
 #runs all features specified in task
 $ grunt cucumberjs

@@ -5,12 +5,21 @@ var {By, until, Key} = require('selenium-webdriver');
 var {expect} = require('chai');
 var request = require("request");
 var http = require('http');
+var FormData = require('form-data');
+var fs = require('fs');
 
 defineSupportCode(function({When, Then}) {
 
   When('I am on the software', function (callback) {
     var softwarePage = this.driver.get("http://test.gtt-web-portal.com/api/software");
     this.driver.manage().timeouts().implicitlyWait(6000);
+
+
+var form = new FormData();
+http.request('http://nodejs.org/images/logo.png', function(response) {
+
+  form.append('my_logo', response);
+});
     expect(softwarePage.length).to.not.equal(0);
     callback();
   });
