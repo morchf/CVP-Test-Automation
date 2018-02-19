@@ -44,6 +44,7 @@
     "cucumber-parallel": "^2.0.3",
     "form-data": "^2.3.1",
     "node-fs": "^0.1.7",
+    "puppeteer": "^1.1.0",
     "ramda": "^0.24.1",
     "request": "^2.83.0",
     "sanitize-filename": "^1.6.1",

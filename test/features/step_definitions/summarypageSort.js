@@ -53,49 +53,34 @@ defineSupportCode(function({When, Then}) {
 
 
 
-  Then('I sort by on time', function (callback) {
-    console.log("by .....2");
-    callback();
-  });
+  Then('I click on the summary table', function (callback) {
+    var summary_tab = this.driver.findElement({id: 'summary-tab'});
+    summary_tab.click();
+  callback();
+});
+
+
+Then('I click Monthly', function (callback) {
+
+  var monthly = this.driver.findElement({xpath: '//*[@id="root"]/div/div/div[2]/div/div[2]/div[1]/div/div[1]'});
+  monthly.click();
+  //*[@id="root"]/div/div/div[2]/div/div[2]/div[1]/div/div[2]
+  // Write code here that turns the phrase above into concrete actions
+  callback();
+});
+Then('I click Weekly', function (callback) {
+  var weekly = this.driver.findElement({xpath: '//*[@id="root"]/div/div/div[2]/div/div[2]/div[1]/div/div[2]'});
+  weekly.click();
+        callback();
+      });
 
 
 
-  Then('I sort by Early trip', function (callback) {
-    console.log("by .....3");
-    callback();
-  });
-
-
-  Then('I sort by Late trip', function (callback) {
-    // Write code here that turns the phrase above into concrete actions
-    callback();
-  });
-
-
-  Then('I sort by trip count', function (callback) {
-    // Write code here that turns the phrase above into concrete actions
-    callback();
-  });
-
-
-
-  Then('I sort by dwell time', function (callback) {
-    // Write code here that turns the phrase above into concrete actions
-    callback();
-  });
-
-
-  Then('I sort by travel time', function (callback) {
-    // Write code here that turns the phrase above into concrete actions
-    callback();
-  });
-
-
-  Then('I sort by duration', function (callback) {
-    // Write code here that turns the phrase above into concrete actions
-    callback();
-  });
-
+Then('I click daily', function (callback) {
+  var daily = this.driver.findElement({xpath: '//*[@id="root"]/div/div/div[2]/div/div[2]/div[1]/div/div[3]'});
+  daily.click();
+        callback();
+});
 
 
 

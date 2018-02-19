@@ -2,9 +2,11 @@
 
 var {defineSupportCode} = require('cucumber');
 var reports = require('cucumber-html-report');
+var {By, until, Key} = require('selenium-webdriver');
 var fs = require('fs');
 var path = require('path');
 var sanitize = require("sanitize-filename");
+
 
 
 defineSupportCode(function({After, Before}) {
@@ -15,14 +17,14 @@ defineSupportCode(function({After, Before}) {
 
   // Asynchronous Callback
   Before(function (scenario, callback) {
-    this.driver.get("http://test.gtt-web-portal.com");
+    this.driver.get("http://master.gttapp.com/");
     this.driver.manage().timeouts().implicitlyWait(6000);
-    var userEmail = this.driver.findElement({xpath: './/div[2]/div/div/form/div[1]/input'});
-    userEmail.sendKeys("userAdmin@gtt.com");
-    var userPassword = this.driver.findElement({xpath: './/div[2]/div/div/form/div[2]/input'});
-    userPassword.sendKeys("Webportal1");
+    var userEmail = this.driver.findElement({id: 'email-input'});
+    userEmail.sendKeys("minneapolis@gtt.com");
+    var userPassword = this.driver.findElement({id: 'password-input'});
+    userPassword.sendKeys("analytics");
     //driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
-    var login = this.driver.findElement({xpath: './/div[2]/div/div/form/button'});
+    var login = this.driver.findElement({id: 'login-button'});
     login.click();
 
         callback();
