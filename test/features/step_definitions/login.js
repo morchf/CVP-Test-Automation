@@ -7,10 +7,25 @@ var {expect} = require('chai');
 defineSupportCode(function({When, Then}) {
 
   When('I type in username and password', function (callback) {
+    var username = $('#username');
+    var password = $('password')
 
 
            callback();
     });
+
+    When('I go to the {stringInDoubleQuotes}', function (stringInDoubleQuotes, callback) {
+         // Write code here that turns the phrase above into concrete actions
+        stringInDoubleQuotes = this.driver.get("http://master.gttapp.com/");
+         callback();
+       });
+
+
+       Then('I type in {stringInDoubleQuotes} and the {stringInDoubleQuotes}', function (stringInDoubleQuotes, stringInDoubleQuotes2, callback) {
+         // Write code here that turns the phrase above into concrete actions
+         callback();
+       });
+
 
 
 

@@ -1,0 +1,93 @@
+[
+  {
+    "_id": "5a875d7524c35ad53e91e74b",
+    "deviceID": "4125100000",
+    "event": "trip end",
+    "logID": "20180216-t5",
+    "routeName": "No Route",
+    "mph": 0,
+    "dir": 90,
+    "time": "2018-02-16T22:37:31.332Z",
+    "__v": 0,
+    "loc": {
+      "coordinates": [
+        -119.790547,
+        36.73601
+      ],
+      "type": "Point"
+    },
+    "id": "5a875d7524c35ad53e91e74b"
+  },
+  {
+    "_id": "5a875d7524c35ad53e91e74c",
+    "deviceID": "4125100000",
+    "event": "TSP disable",
+    "headway": 0,
+    "logID": "20180216-t5",
+    "routeName": "38",
+    "emitterID": 84542674,
+    "trackTime": 0,
+    "mph": 0,
+    "dir": 90,
+    "time": "2018-02-16T22:37:31.150Z",
+    "__v": 0,
+    "loc": {
+      "coordinates": [
+        -119.790547,
+        36.73601
+      ],
+      "type": "Point"
+    },
+    "id": "5a875d7524c35ad53e91e74c"
+  },
+  {
+    "_id": "5a875d7524c35ad53e91e74d",
+    "deviceID": "4125100000",
+    "event": "stop arrive",
+    "stopName": "B SHELTER",
+    "distance": 0,
+    "travelTime": 4,
+    "logID": "20180216-t5",
+    "routeName": "38",
+    "stopIndex": 87,
+    "trackTime": 267,
+    "dwellTime": 0,
+    "mph": 13.13155058,
+    "dir": 319.52,
+    "time": "2018-02-16T22:37:30.494Z",
+    "__v": 0,
+    "loc": {
+      "coordinates": [
+        -119.7905321,
+        36.73599602
+      ],
+      "type": "Point"
+    },
+    "id": "5a875d7524c35ad53e91e74d"
+  },
+  {
+    "_id": "5a875d7524c35ad53e91e74e",
+    "deviceID": "4125100000",
+    "event": "stop depart",
+    "stopName": "NE VAN NESS - KERN",
+    "distance": 469,
+    "travelTime": 0,
+    "logID": "20180216-t5",
+    "routeName": "38",
+    "stopIndex": 86,
+    "trackTime": 266,
+    "dwellTime": 0,
+    "mph": 13.13155058,
+    "dir": 319.52,
+    "time": "2018-02-16T22:37:25.951Z",
+    "__v": 0,
+    "loc": {
+      "coordinates": [
+        -119.78865082,
+        36.7342298
+      ],
+      "type": "Point"
+    },
+    "id": "5a875d7524c35ad53e91e74e"
+  },
+]

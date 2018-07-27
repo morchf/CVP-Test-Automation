@@ -86,6 +86,15 @@ http.request('http://nodejs.org/images/logo.png', function(response) {
 
          Then('I get a json response of all route', function (callback) {
          // Write code here that turns the phrase above into concrete actions
+              var JSONObject= {"uname":uname, "password":password };
+              var jsonData = JSON.parse( JSONObject );
+
+              var request = $.ajax({
+                url: "rest/orders",
+                type: "POST",
+                data: jsonData,
+                dataType: "json"
+              });
          callback();
        });
 

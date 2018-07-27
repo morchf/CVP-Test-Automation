@@ -1,4 +1,4 @@
-Grunt Cucumberjs
+﻿Grunt Cucumberjs
 ================
 ***Automation test for GTT Webportal using Cucumber.js. Outputs results in various HTML themes. Runs Cucumber.js in Parallel***
 
@@ -83,8 +83,13 @@ To run the test on your local..
 #runs all features specified in task
 $ grunt cucumberjs
 
+or 
+$ ./node_modules/grunt-cli/bin/grunt cucumberjs
+
+
 #you can override options via the cli
-$ grunt cucumberjs --require=test/functional/step_definitions/ --features=features/myFeature.feature --format=pretty
+$ grunt cucumberjs --require=test/features/step_definitions/ --features=test/features/cvp.feature --format=pretty
+
 ```
 
 ## Options

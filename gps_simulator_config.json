@@ -1,0 +1,11 @@
+{
+  "heading": true,
+  "breadCrumb": false,
+  "speed": true,
+  "updateFrequency": 1,
+  "location": true,
+  "timeCorrectionEnabled": true,
+  "trigger": "RMC",
+  "breadCrumbFrequency": 15,
+  "rawStrings": false
+}

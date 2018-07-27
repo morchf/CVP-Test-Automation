@@ -1,0 +1,5 @@
+{
+  "logLevel": "warn",
+  "daysToSaveOutputLogs": 1,
+  "enableOutputLog": true
+}

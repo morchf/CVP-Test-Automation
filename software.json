@@ -1,0 +1,21 @@
+{
+    "_id": "5a87361124c35ad53e91d9ec",
+    "package": "cvp-1.4.20.7z",
+    "filename": "1518810638548-cvp-1.4.20.7z",
+    "target": "cvp",
+    "version": "1.4.20",
+    "__v": 0,
+    "autoDeploy": false,
+    "deviceClass": "vehicle pc",
+    "date": "2018-02-16T19:50:41.328Z",
+    "pendingDeviceIDs": [
+      "41251"
+    ],
+    "currentDeviceIDs": [
+      "4125100000"
+    ],
+    "failedDeviceIDs": [],
+    "deployedDeviceIDs": [
+      "4125100000"
+    ]
+  }
