@@ -17,7 +17,7 @@ defineSupportCode(function({After, Before}) {
 
   // Asynchronous Callback
   Before(function (scenario, callback) {
-    this.driver.get("http://34.208.252.1:4000");
+    this.driver.get("http://52.36.161.40:4000");
     this.driver.manage().timeouts().implicitlyWait(6000);
 
 

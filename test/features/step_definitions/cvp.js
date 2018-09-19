@@ -11,7 +11,7 @@ var fetch = require('node-fetch');
 defineSupportCode(function({When, Then}) {
 
   When('I go to my lanner cvp advance url', function (callback) {
-    this.driver.get("http://34.208.252.1:4000/advanced");
+    this.driver.get("http://52.36.161.40:4000/advanced");
     this.driver.manage().timeouts().implicitlyWait(6000);
     callback();
   });
@@ -468,7 +468,7 @@ defineSupportCode(function({When, Then}) {
   Then('I change the bus name to automationCVP', function (callback) {
 
     var body =  fs.readFileSync('Bad_device.json', 'utf-8');
-    fetch('http://34.208.252.1:4000/api/device/config', {
+    fetch('http://52.36.161.40:4000/api/device/config', {
       method: 'PUT', body,
       //body:    JSON.stringify(body),
       headers: { 'Content-Type': 'device/json' },
@@ -488,7 +488,7 @@ defineSupportCode(function({When, Then}) {
 
   Then('I change the asm config to new configuration', function (callback) {
     var body =  fs.readFileSync('asm_config.json', 'utf-8');
-    fetch('http://34.208.252.1:4000/api/asm/config', {
+    fetch('http://52.36.161.40:4000/api/asm/config', {
       method: 'PUT', body,
       //body:    JSON.stringify(body),
       headers: { 'Content-Type': 'application/json' },
@@ -527,7 +527,7 @@ defineSupportCode(function({When, Then}) {
 
   Then('I change the core number of days to save output', function (callback) {
     var body =  fs.readFileSync('core_config.json', 'utf-8');
-    fetch('http://34.208.252.1:4000/api/core/config', {
+    fetch('http://52.36.161.40:4000/api/core/config', {
       method: 'PUT', body,
       //body:    JSON.stringify(body),
       headers: { 'Content-Type': 'application/json' },
@@ -544,7 +544,7 @@ defineSupportCode(function({When, Then}) {
 
   Then('I change the gps configuration', function (callback) {
     var body =  fs.readFileSync('gps_config.json', 'utf-8');
-    fetch('http://34.208.252.1:4000/api/gps/config', {
+    fetch('http://52.36.161.40:4000/api/gps/config', {
       method: 'PUT', body,
       //body:    JSON.stringify(body),
       headers: { 'Content-Type': 'application/json' },
@@ -561,7 +561,7 @@ defineSupportCode(function({When, Then}) {
 
   Then('I change the gps-simulator configuration', function (callback) {
     var body =  fs.readFileSync('gps_simulator_config.json', 'utf-8');
-    fetch('http://34.208.252.1:4000/api/gps-simulator/config', {
+    fetch('http://52.36.161.40:4000/api/gps-simulator/config', {
       method: 'PUT', body,
       //body:    JSON.stringify(body),
       headers: { 'Content-Type': 'application/json' },
